@@ -15,6 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-# I'm a software developer who's aiming to keep on learning. 🤓 
+### I'm a software developer who's aiming to keep on learning. 🤓 
 Currently, I'm into understanding the different ways to create AI chatbots, as it's the focus of my undergraduate thesis!
 
+### Aiming to build more personal passion projects.
+Waiting for Christmas break to get into projects I'm passionate about! 🎄 
