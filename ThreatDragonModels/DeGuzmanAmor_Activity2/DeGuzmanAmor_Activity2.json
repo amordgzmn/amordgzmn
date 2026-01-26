@@ -574,7 +574,7 @@
               "threats": [
                 {
                   "id": "70c30089-570f-4e74-878d-35b52d5b0326",
-                  "title": "Tampering ",
+                  "title": "Tampering (equivalent to spoofing)",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
@@ -587,7 +587,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
@@ -801,11 +801,7 @@
             },
             "vertices": [
               {
-                "x": 320,
-                "y": 440
-              },
-              {
-                "x": 210,
+                "x": 190,
                 "y": 470
               }
             ]
@@ -1142,40 +1138,6 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "743d2ead-9d67-46da-81e7-f76c514ee995",
-            "source": {
-              "x": 50,
-              "y": -30
-            },
-            "target": {
-              "x": 540,
-              "y": 110
-            },
-            "vertices": [
-              {
-                "x": 220,
-                "y": 140
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
             "id": "dedca971-e695-4f18-9b99-b99dd0a09bb2",
             "source": {
               "x": 800,
@@ -1354,17 +1316,55 @@
             ],
             "id": "548013af-4140-474a-a20e-b0e0302e0934",
             "source": {
-              "x": 350,
-              "y": -60
+              "x": 330,
+              "y": -70
             },
             "target": {
-              "x": 380,
-              "y": 570
+              "x": 340,
+              "y": 550
             },
             "vertices": [
               {
                 "x": 270,
-                "y": 280
+                "y": 60
+              },
+              {
+                "x": 270,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "743d2ead-9d67-46da-81e7-f76c514ee995",
+            "source": {
+              "x": 80,
+              "y": -40
+            },
+            "target": {
+              "x": 640,
+              "y": 140
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 140
               }
             ]
           }
