@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "cf47f1dc-7c6b-4ced-b74b-832979f53ea4",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Authorization Provider",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +242,6 @@
               ]
             },
             "id": "196b8cd6-c13e-4432-9fed-fb74f98d8074",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "LDAP",
@@ -260,11 +260,11 @@
           {
             "position": {
               "x": 360,
-              "y": 247
+              "y": 270
             },
             "size": {
-              "width": 90,
-              "height": 110
+              "width": 120,
+              "height": 140
             },
             "attrs": {
               "text": {
@@ -278,6 +278,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -361,7 +362,6 @@
               ]
             },
             "id": "b820150e-3b14-4e31-bddd-290d698a1bc6",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -375,7 +375,8 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            }
+            },
+            "children": []
           },
           {
             "position": {
@@ -401,6 +402,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -484,7 +486,6 @@
               ]
             },
             "id": "e3117d23-8a59-486a-bd05-9851bcf94265",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database",
@@ -503,8 +504,8 @@
           },
           {
             "position": {
-              "x": 30,
-              "y": 297
+              "x": -20,
+              "y": 350
             },
             "size": {
               "width": 112.5,
@@ -522,6 +523,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -605,7 +607,6 @@
               ]
             },
             "id": "03f2175a-6ce5-427d-845a-27a56fd489e8",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "Browser Client",
@@ -714,13 +715,17 @@
               "y": 90
             },
             "target": {
-              "x": 240,
-              "y": 420
+              "x": 250,
+              "y": 550
             },
             "vertices": [
               {
                 "x": 220,
                 "y": 250
+              },
+              {
+                "x": 220,
+                "y": 470
               }
             ]
           },
@@ -744,7 +749,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "User Is Authenticated",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -758,17 +763,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "User Is Authenticated"
             ],
             "id": "36081e3d-1f40-41f2-848c-72d7a4297fb4",
             "source": {
-              "x": 143,
-              "y": 320
+              "cell": "03f2175a-6ce5-427d-845a-27a56fd489e8",
+              "port": "dc32a264-32b2-4767-b516-81f133b4e6c1"
             },
             "target": {
               "cell": "b820150e-3b14-4e31-bddd-290d698a1bc6",
               "port": "d06f1ef2-9d07-47a5-a8b5-db7c273f90b1"
-            }
+            },
+            "vertices": [
+              {
+                "x": 260,
+                "y": 370
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -790,7 +801,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Insert Feedback Comments",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -804,21 +815,25 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Insert Feedback Comments"
             ],
-            "id": "4b5ebef3-17fa-4c69-94bf-55370f749ce3",
+            "id": "4b49964f-c2b2-4d52-820b-4595141177d8",
             "source": {
               "cell": "03f2175a-6ce5-427d-845a-27a56fd489e8",
               "port": "dc32a264-32b2-4767-b516-81f133b4e6c1"
             },
             "target": {
               "cell": "b820150e-3b14-4e31-bddd-290d698a1bc6",
-              "port": "ffaef41a-8777-4401-b9cf-f37c9b666a5a"
+              "port": "d06f1ef2-9d07-47a5-a8b5-db7c273f90b1"
             },
             "vertices": [
               {
-                "x": 270,
-                "y": 357
+                "x": 190,
+                "y": 420
+              },
+              {
+                "x": 280,
+                "y": 400
               }
             ]
           }
