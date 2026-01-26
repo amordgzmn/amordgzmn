@@ -31,8 +31,8 @@
                 "text": "Authorization Provider"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -129,21 +129,43 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "93d5b40b-98fc-4831-9381-372702f59269",
+                  "title": "Elevation Of Privilege",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
             "position": {
-              "x": 740,
-              "y": 30
+              "x": 820,
+              "y": -10.000000000000014
             },
             "size": {
-              "width": 140,
+              "width": 110,
               "height": 110
             },
             "attrs": {
@@ -151,8 +173,8 @@
                 "text": "LDAP"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -249,13 +271,36 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
-            }
+              "threats": [
+                {
+                  "id": "2e5a5762-8d51-4de9-b931-fba4d3ea4fcb",
+                  "title": "Tampering with the Data using the SQL Injection Attack",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "children": []
           },
           {
             "position": {
@@ -271,8 +316,8 @@
                 "text": "Web Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -369,12 +414,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "89af48f3-ca44-448f-be4c-4265b272e103",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "children": [
               "97c0bc5a-0d87-40e1-878f-c84360459487",
@@ -526,48 +593,6 @@
                 "denialOfService": 0
               }
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "cdf7482c-1bad-4fd1-8e87-48accb571c37",
-            "source": {
-              "x": 250,
-              "y": 30
-            },
-            "target": {
-              "x": 250,
-              "y": 550
-            },
-            "vertices": [
-              {
-                "x": 200,
-                "y": 120
-              },
-              {
-                "x": 180,
-                "y": 310
-              },
-              {
-                "x": 220,
-                "y": 470
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -874,6 +899,7 @@
               "Auth Verification"
             ],
             "id": "97c0bc5a-0d87-40e1-878f-c84360459487",
+            "parent": "b820150e-3b14-4e31-bddd-290d698a1bc6",
             "source": {
               "cell": "b820150e-3b14-4e31-bddd-290d698a1bc6",
               "port": "199f3447-2a73-4644-a4d7-90dc5ac3ac0f"
@@ -887,8 +913,7 @@
                 "x": 500,
                 "y": 200
               }
-            ],
-            "parent": "b820150e-3b14-4e31-bddd-290d698a1bc6"
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -965,6 +990,7 @@
               "Insert Query with Feedback Comments"
             ],
             "id": "7ef1249e-2b60-4e80-882a-5a50533078d6",
+            "parent": "b820150e-3b14-4e31-bddd-290d698a1bc6",
             "source": {
               "cell": "b820150e-3b14-4e31-bddd-290d698a1bc6",
               "port": "d0c9195e-8c19-4a83-91c4-b1a3a2d0f12f"
@@ -978,8 +1004,7 @@
                 "x": 630,
                 "y": 340
               }
-            ],
-            "parent": "b820150e-3b14-4e31-bddd-290d698a1bc6"
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -1011,7 +1036,7 @@
             "vertices": [
               {
                 "x": 660,
-                "y": 40
+                "y": 70
               },
               {
                 "x": 660,
@@ -1072,9 +1097,113 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verifies the Privilege",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Verifies the Privilege"
+            ],
+            "id": "6651a64a-207e-4e58-af32-760df0e78cb4",
+            "source": {
+              "cell": "cf47f1dc-7c6b-4ced-b74b-832979f53ea4",
+              "port": "d0c9195e-8c19-4a83-91c4-b1a3a2d0f12f"
+            },
+            "target": {
+              "cell": "196b8cd6-c13e-4432-9fed-fb74f98d8074",
+              "port": "d06f1ef2-9d07-47a5-a8b5-db7c273f90b1"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 25
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verified",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Verified"
+            ],
+            "id": "21b5770f-b9e3-4598-99d8-4b1a29cd033f",
+            "source": {
+              "cell": "196b8cd6-c13e-4432-9fed-fb74f98d8074",
+              "port": "d06f1ef2-9d07-47a5-a8b5-db7c273f90b1"
+            },
+            "target": {
+              "cell": "cf47f1dc-7c6b-4ced-b74b-832979f53ea4",
+              "port": "d0c9195e-8c19-4a83-91c4-b1a3a2d0f12f"
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 90
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 0,
-              "y": 280
+              "x": -150,
+              "y": 300
             },
             "size": {
               "width": 120,
@@ -1085,13 +1214,14 @@
                 "text": "Browser Client"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1175,7 +1305,6 @@
               ]
             },
             "id": "485ce033-9bcb-420a-8391-e46deb50ebcb",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Browser Client",
@@ -1183,19 +1312,79 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "29ca6f2c-fb21-4706-a6de-8c3ed8b9b64d",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "548013af-4140-474a-a20e-b0e0302e0934",
+            "source": {
+              "x": 350,
+              "y": -60
+            },
+            "target": {
+              "x": 380,
+              "y": 570
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": -20
+              },
+              {
+                "x": 270,
+                "y": 280
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 10
   }
 }
