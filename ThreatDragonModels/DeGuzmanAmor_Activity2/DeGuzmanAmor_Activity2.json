@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 345,
-              "y": -30.000000000000014
+              "x": 360,
+              "y": -50.000000000000014
             },
             "size": {
               "width": 150,
@@ -383,8 +383,8 @@
           },
           {
             "position": {
-              "x": 800,
-              "y": 330
+              "x": 790,
+              "y": 290
             },
             "size": {
               "width": 120,
@@ -832,8 +832,8 @@
             },
             "vertices": [
               {
-                "x": 390,
-                "y": 220
+                "x": 400,
+                "y": 200
               }
             ]
           },
@@ -884,8 +884,8 @@
             },
             "vertices": [
               {
-                "x": 490,
-                "y": 220
+                "x": 500,
+                "y": 200
               }
             ],
             "parent": "b820150e-3b14-4e31-bddd-290d698a1bc6"
@@ -975,8 +975,8 @@
             },
             "vertices": [
               {
-                "x": 620,
-                "y": 390
+                "x": 630,
+                "y": 340
               }
             ],
             "parent": "b820150e-3b14-4e31-bddd-290d698a1bc6"
@@ -1001,21 +1001,73 @@
             ],
             "id": "4434db11-3459-4f42-b20b-7fd4b97b4002",
             "source": {
-              "x": 720,
-              "y": -50
+              "x": 700,
+              "y": -80
             },
             "target": {
-              "x": 830,
-              "y": 570
+              "x": 700,
+              "y": 560
             },
             "vertices": [
               {
-                "x": 630,
+                "x": 660,
                 "y": 40
               },
               {
-                "x": 690,
-                "y": 340
+                "x": 660,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Success = 1",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Success = 1"
+            ],
+            "id": "ae32813f-0ecc-4ac3-9689-b84c7d70cd9e",
+            "source": {
+              "cell": "e3117d23-8a59-486a-bd05-9851bcf94265",
+              "port": "9c4c9f57-bdb9-4a27-affd-91ffbc8220f8"
+            },
+            "target": {
+              "cell": "b820150e-3b14-4e31-bddd-290d698a1bc6",
+              "port": "d0c9195e-8c19-4a83-91c4-b1a3a2d0f12f"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 410
               }
             ]
           },
