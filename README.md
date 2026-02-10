@@ -19,4 +19,7 @@ Here are some ideas to get you started:
 Currently, I'm into understanding the different ways to create AI chatbots, as it's the focus of my undergraduate thesis!
 
 ### Aiming to build more personal passion projects.
-Waiting for Christmas break to get into projects I'm passionate about! 🎄 
+Locking in for thesis currently, but I'm aiming to explore different tech stacks in the future. 🤖 
+
+### Striving to be a life-long learner.
+Reviewing for CompTIA Security+ in my free time, hoping to pivot to cybersecurity or at the very least knowledgeable about secure development. 🔐 
